@@ -1,0 +1,30 @@
+html {
+  background-color: black;
+}
+.signup-container {
+  margin-left: 35vw;
+  /*margin-right: 10vw;*/
+  display: grid;
+  position: relative;
+  text-align: right;
+}
+.name {
+  display: flex;
+  align-items: stretch;
+  height: 50vh;
+}
+/*body{
+  height: 90vh;
+}*/
+.container {
+  background-color: #3399ff;
+   -webkit-filter: grayscale(60%);
+  height: 75vh;
+  width: 100vw;
+  margin-bottom: 10vh;
+}
+.submit {
+  margin-right: 5vw;
+  /*background-color: white;*/
+  color: white;
+}
