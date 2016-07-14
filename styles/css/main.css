@@ -1,0 +1,44 @@
+.signup-container {
+  align-self: center;
+  display: grid;
+  position: relative;
+  text-align: right;
+}
+.column {
+  margin-left: 11vw;
+  margin-right: 18vw;
+}
+.name {
+  display: flex;
+  align-items: stretch;
+  height: 50vh;
+}
+.submit {
+  margin-right: 5vw;
+  background-color: black;
+  color: white;
+}
+.bar {
+  fill: steelblue;
+}
+.bar:hover {
+  fill: brown;
+}
+.axis {
+  font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}
+.container-fluid {
+  height: .5;
+}
+#charty {
+  top: 100vh;
+}
