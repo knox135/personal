@@ -1,0 +1,19 @@
+<html>
+  <head>
+		<title>Pong</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../gamepractice/body.css">
+	</head>
+	<body onload='setup();'>
+		<div id='gameCanvas'><div id="blank"><div id="loading"><p></p><h3 class="message">Loading Please Wait</h3></div> </div></div>
+    <div id='scoreboard'>
+			<h1 id='scores'>0-0</h1>
+			<h1 id='title'>Pong</h1>
+			<h2 id='winnerBoard'>First to 7 wins</h2>
+			<h3>A - move left
+			<br>D - move right</h3>
+		</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.js'></script>
+    <script src='./../gamepractice/keyboard.js'></script>
+    <script src='../gamepractice/game.js'></script>

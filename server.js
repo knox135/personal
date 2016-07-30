@@ -5,13 +5,21 @@ var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 var User = require("./module/user.js");
 var cors = require('cors');
-var port = 3000;
 var bodyParser = require('body-parser');
+var session = require('express-session');
+config = require('./config.json');
+var corsOptions = {
+  origin: 'http://localhost:3000'
+};
+var port = 3000;
+
 mongoose.connect('mongodb://localhost/mydatabase');
 var db = mongoose.connection;
-
-app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
+app.use(cors(corsOptions));
+app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/game'));
+app.use(express.static(__dirname + '/public/gamepractice'));
 
 app.get('/person', function(req, res) {
   User.find({
@@ -49,6 +57,28 @@ app.put('/person/:id', function(req, res, next){
           return res.status(200).send(resp);
       }
   });
+});
+var messageCtrl = require('./public/controllers/messageController.js');
+var userCtrl = require('./public/controllers/userController.js');
+
+app.get('/message', messageCtrl.read);
+
+app.post('/message', messageCtrl.create);
+app.put('/message/:id', messageCtrl.update);
+app.delete('/message/:id', messageCtrl.delete);
+
+
+app.get('/user', userCtrl.read);
+app.post('/user', userCtrl.create);
+app.put('/user/:id', userCtrl.update);
+app.delete('user/:id', userCtrl.delete);
+
+var mongoURI = 'mongodb://localhost:27017/message';
+
+
+mongoose.set('debug', true);
+mongoose.connection.once('open', function() {
+  console.log('Connected to mongo at: ', mongoURI);
 });
 
 app.listen(port, function(){

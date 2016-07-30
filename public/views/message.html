@@ -1,0 +1,33 @@
+<div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                  <div class='signup-container'>
+                      <div class="column">
+                            <input type="text" placeholder="username" ng-model="newMessage.author">
+                            <br>
+                            <textarea ng-model="newMessage.body"></textarea>
+                            <br>
+                            <button type="button" class="smack" ng-click="createMessage(newMessage)">Talk Smack</button>
+                            <br><br><br>
+                            <div class='responses'>
+                            <div ng-repeat="message in messages track by $index">
+                              <div class="messbody">{{message.body}}<br></div>
+                              <div class="authbody">{{message.author}}<br></div>
+                              <div class="authbody">{{message.created | date: "M/d/yy h:mm:ss a" }}<br></div>
+                              <button type="button" class="deletebutton" ng-click="deleteMessage(message._id)">Delete</button>
+                              </div>
+                              <br>
+
+                              <br>
+                              <!-- <textarea rows="9" cols="40" ng-model="updatedMessage.body"></textarea> -->
+                              <br>
+                              <!-- <button type="button" ng-click="updateMessage(message._id, updatedMessage)">Update</button> -->
+
+                            </div>
+                      </div>
+                  </div>
+                </div>
+           </div>
+      </div>
+  </div>

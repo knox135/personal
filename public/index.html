@@ -2,13 +2,8 @@
 <html ng-app="myApp">
   <head>
     <meta charset="utf-8">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/bootstrap.css">
-
-
+    <link rel="stylesheet" href="../gulped/main.min.css">
   </head>
   <body>
     <div id="view-container">
@@ -16,7 +11,24 @@
 
     <ui-view></ui-view>
     </div>
-
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script src="./vendor/jquery/jquery.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/clean-blog.min.js"></script>
+  <script src="game/js/three.min.js"></script>
+  <script src="game/js/Detector.js"></script>
+  <script src="game/js/shaders/ConvolutionShader.js"></script>
+  <script src="game/js/shaders/CopyShader.js"></script>
+  <script src="game/js/shaders/FilmShader.js"></script>
+  <script src="game/js/shaders/VignetteShader.js"></script>
+  <script src="game/js/postprocessing/EffectComposer.js"></script>
+  <script src="game/js/postprocessing/RenderPass.js"></script>
+  <script src="game/js/postprocessing/BloomPass.js"></script>
+  <script src="game/js/postprocessing/FilmPass.js"></script>
+  <script src="game/js/postprocessing/ShaderPass.js"></script>
+  <script src="game/js/postprocessing/TexturePass.js"></script>
+  <script src="game/js/postprocessing/MaskPass.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-animate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.js"></script>
@@ -26,6 +38,9 @@
   <script src="../controllers/loginController.js"></script>
   <script src="../controllers/myAppController.js"></script>
   <script src="../controllers/signupController.js"></script>
+  <script src="../controllers/messageCtrl.js"></script>
+  <script src="../controllers/homeCtrl.js"></script>
   <script src="../services/userService.js"></script>
+  <script src="./services/messageService.js"></script>
   </body>
 </html>
