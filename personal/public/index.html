@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <link rel="stylesheet" href="./styles/css/bootstrap.css">
+  </head>
+  <body>
+    <div id="view-container">
+    <header></header>
+
+    <ui-view></ui-view>
+    </div>
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script src="./vendor/jquery/jquery.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/clean-blog.min.js"></script>
+  <script src="game/js/three.min.js"></script>
+  <script src="game/js/Detector.js"></script>
+  <script src="game/js/shaders/ConvolutionShader.js"></script>
+  <script src="game/js/shaders/CopyShader.js"></script>
+  <script src="game/js/shaders/FilmShader.js"></script>
+  <script src="game/js/shaders/VignetteShader.js"></script>
+  <script src="game/js/postprocessing/EffectComposer.js"></script>
+  <script src="game/js/postprocessing/RenderPass.js"></script>
+  <script src="game/js/postprocessing/BloomPass.js"></script>
+  <script src="game/js/postprocessing/FilmPass.js"></script>
+  <script src="game/js/postprocessing/ShaderPass.js"></script>
+  <script src="game/js/postprocessing/TexturePass.js"></script>
+  <script src="game/js/postprocessing/MaskPass.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-animate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.js"></script>
+  <script src="../app.js"></script>
+  <script src="../directives/header.js"></script>
+  <script src="../controllers/homeController.js"></script>
+  <script src="../controllers/loginController.js"></script>
+  <script src="../controllers/myAppController.js"></script>
+  <script src="../controllers/signupController.js"></script>
+  <script src="../controllers/messageCtrl.js"></script>
+  <script src="../controllers/homeCtrl.js"></script>
+  <script src="../services/userService.js"></script>
+  <script src="./services/messageService.js"></script>
+  </body>
+</html>

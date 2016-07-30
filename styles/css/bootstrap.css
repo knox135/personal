@@ -1,0 +1,43 @@
+.left {
+  width: 33%;
+}
+.smack {
+  margin-right: 5vw;
+}
+.responses {
+  margin-bottom: 5pt;
+  margin-top: 10pt;
+  text-align: center;
+  margin-left: 9vw;
+}
+.authbody {
+  font-style: oblique;
+  font-size: 1.3rem;
+}
+.messbody {
+  font-weight: bold;
+}
+.deletebutton {
+  background-color: transparent;
+  border: 0;
+  color: white;
+}
+.lefty {
+  height: 20vh;
+  width: 20vw;
+}
+.middly {
+  width: 60vw;
+}
+#charty {
+  margin-left: 20%;
+  align-items: center;
+}
+.container {
+  display:block;
+  align-self: center;
+  margin-left: 30%;
+}
+.overloard {
+  background-color: black;
+}
